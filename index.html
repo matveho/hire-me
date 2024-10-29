@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckVoid</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background styling */
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* SVG Pattern */
+        .pattern-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background SVG pattern -->
+    <div class="pattern-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <defs>
+                <pattern id="duckvoidPattern" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                    <rect width="10" height="10" fill="#4B0082" />
+                    <rect x="10" y="10" width="10" height="10" fill="#4B0082" />
+                </pattern>
+            </defs>
+            <rect width="200%" height="200%" fill="url(#duckvoidPattern)" />
+        </svg>
+    </div>
+
+    <!-- Optional Content -->
+    <h1>Welcome to DuckVoid</h1>
+</body>
+</html>
